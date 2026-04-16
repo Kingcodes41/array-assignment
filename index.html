@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Registry</h2>
+        <div class="controls">
+            <input type="text" id="nameInput" placeholder="Enter student name">
+            <input type="number" id="scoreInput" placeholder="Enter score">
+            <input type="number" id="indexInput" placeholder="Enter index for removal">
+        </div>
+
+        <div class="buttons">
+            <button onclick="addEnd()">push()</button>
+            <button onclick="removeLast()">pop()</button>
+            <button onclick="removeFirst()">shift()</button>
+            <button onclick="addStart()">unshift()</button>
+            <button onclick="showPassed()">filter()</button>
+            <button onclick="bonusPoint()">map()</button>
+            <button onclick="findStudent()">find()</button>
+            <button onclick="removeByIndex()">splice()</button>
+            <button onclick="copyTop()">slice()</button>
+            <button onclick="findIndex()">indexOf()</button>
+        </div>
+
+        <div id="display"></div>
+            <button onclick="addStart()">unshift()</button>
+            <button onclick="render()">forEach()</button>
+            <button onclick="showPassed()">filter()</button>
+            <button onclick="bonusPoints()">map()</button>
+            <button onclick="findStudent()">find()</button>
+            <button onclick="checkExists()">includes()</button>
+            <button onclick="removeByIndex()">splice()</button>
+            <button onclick="copyTop()">slice()</button>
+            <button onclick="findIndex()">indexOf()</button>
+
+        </div>
+
+        <div id="display" class="list-container" >
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
