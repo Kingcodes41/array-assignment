@@ -36,7 +36,7 @@ input{
 }
 
 button{
-    background: #1864ab;
+    background: #ffa94d;
     color: white;
     font-size: 12px;
     border-radius: 4px;
@@ -46,7 +46,7 @@ button{
 
 }
 button:hover{
-    background: #0056b3;
+    background: #e8590c;
 }
 
 #display {
