@@ -1,20 +1,8 @@
 let student = [
-  { name: "Ifeanyi Okafor", score: 55 },
-  { name: "Chidubem Nwosu", score: 40 },
-  { name: "Babatunde Abiola", score: 55 },
-  { name: "Temitope Ogunsola", score: 72 },
-  { name: "Akinyemi Adeyemi", score: 68 },
-  { name: "Musa Hassan", score: 64 },
-  { name: "Sani Ahmed", score: 39 },
-  { name: "Aberi Yusuf", score: 68 },
-  { name: "Oluwasegun Adebayo", score: 55 },
-  { name: "Obioma Okeke", score: 40 },
-  { name: "Ayodeji Tinubu", score: 20 },
-  { name: "Abubakar Danjuma", score: 15 },
-  { name: "Maureen Okechukwu", score: 74 },
-  { name: "Sanni Hassan", score: 80 },
-  { name: "Oluwatobi David", score: 90 },
+  { name: "", score:  },
+  
 ];
+
 
 function getInput() {
   const name = document.getElementById('nameInput').value.trim();
@@ -94,5 +82,23 @@ function findIndex() {
   const index = student.map(s => s.name.toLowerCase()).indexOf(name.toLowerCase());
   alert(index !== -1 ? `Index is: ${index}` : "Not found");
 }
+function editStudent(){
+  let index=prompt("Enter the student index you want to edit(0,1,2.....):");
+}
+
+if(index!==null&& index> student.length){
+
+  let newName=prompt("Enter the new name for" + students[index] + ":");
+
+  if(newName!==null && newName.trim()!==""){
+    student[index]=newName;
+    displayStudent("updated successfully")
+  }
+  
+  
+}else{
+  alert("invalid index or cancelled.");
+}
+
 
 render();
