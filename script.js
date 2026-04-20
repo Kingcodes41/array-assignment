@@ -1,5 +1,5 @@
 let student = [
-  { name: "", score:  },
+  { name: "", score:"" }
   
 ];
 
